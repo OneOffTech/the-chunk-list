@@ -1,0 +1,99 @@
+name = "Unstructured"
+description = "Unstructured provides a platform and tools to ingest and process unstructured documents for retrieval-augmented generation (RAG), agentic AI, and model fine-tuning."
+currency = "USD"
+url = "https://unstructured.io/"
+github = "https://github.com/Unstructured-IO/unstructured"
+docs = "https://docs.unstructured.io/welcome"
+type = ["Cloud", "Self-hosted"]
+last_updated = "2025-09-16"
+
+[metadata]
+default_billing_frequency = "Monthly"
+default_currency = "USD"
+has_usage_based_billing = true
+has_enterprise_option = true
+has_free_tier = false
+
+has_trial = true
+trial = "1000 pages/day for 7 days"
+
+
+[compliance]
+gdpr = true
+soc_two = true
+iso = true
+# ISO 27001
+hipaa = true
+
+[processing]
+tables = true
+forms = true
+images = true
+graphs = true
+equation = true
+ocr = true
+
+[input_formats]
+pdf = true
+spreadsheet = true
+word = true
+powerpoint = true
+html = true
+epub = false
+images = true
+
+[output_formats]
+json = true
+markdown = true
+html = false
+plain = false
+structuredData = false
+
+
+[[tiers]]
+name = "Starter"
+billing_type = "Subscription, Usage"
+price = "$500/month"
+included_quota = "15000 pages/month"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = "$0.03/page"
+features = [
+    "API or UI access for document processing",
+    "Access to latest VLMs for partitioning and enrichment",
+    "Balance speed, performance and cost with different partition strategies",
+    "Transform 80+ file types",
+    "HIPAA, SOC2 Type 2, GDPR and ISO 27001 compliance",
+    "Basic support"
+]
+
+[[tiers]]
+name = "Team"
+price = "Custom"
+billing_type = "Subscription"
+billing_frequency = "Monthly"
+included_quota = ""
+currency = "USD"
+cost_per_unit = ""
+features = [
+    "Team accounts with enterprise grade Role Based Access Control",
+    "Access to workspaces",
+    "24/7 connector maintenance",
+    "Robust error handling and observability",
+    "Access to the Unstructured support portal"
+]
+
+[[tiers]]
+name = "Enterprise"
+price = "Custom"
+billing_type = "Subscription"
+billing_frequency = "Monthly"
+included_quota = ""
+currency = "USD"
+cost_per_unit = ""
+features = [
+    "Dedicated Instance or Customer-hosted deployment (VPC)",
+    "Support for fine-tuned, private models",
+    "Modular plugin architecture for custom integrations",
+    "Dedicated customer success team"
+]

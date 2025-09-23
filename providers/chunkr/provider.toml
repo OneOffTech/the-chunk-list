@@ -1,0 +1,89 @@
+name = "Chunkr"
+description = "Chunkr AI is an API service to convert complex documents into LLM/RAG-ready data."
+currency = "USD"
+url = "https://www.chunkr.ai/"
+github = "https://github.com/lumina-ai-inc/chunkr"
+docs = "https://docs.chunkr.ai/docs/get-started/overview"
+type = ["Cloud", "Self-hosted"]
+last_updated = "2025-09-16"
+
+[metadata]
+default_billing_frequency = "Monthly"
+default_currency = "USD"
+has_usage_based_billing = true
+has_enterprise_option = true
+has_free_tier = true
+
+
+[compliance]
+gdpr = ""
+soc_two = ""
+iso = ""
+
+
+[input_formats]
+pdf = false
+spreadsheet = false
+word = false
+powerpoint = false
+html = false
+epub = false
+images = false
+
+[output_formats]
+json = false
+markdown = false
+html = false
+plain = false
+structuredData = false
+
+
+[[tiers]]
+name = "Free"
+billing_type = "Usage"
+price = "$0/month"
+included_quota = "200 pages"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = ""
+features = [
+    "No payment info required",
+    "Discord community support"
+]
+
+
+[[tiers]]
+name = "Starter"
+price = "$50/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "5,000 pages included"
+currency = "USD"
+cost_per_unit = "$0.01 / page"
+features = [
+    "Community + Email support"
+]
+
+[[tiers]]
+name = "Dev"
+price = "$200/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "25,000 pages included"
+currency = "USD"
+cost_per_unit = "$0.008 / page"
+features = [
+    "Priority support channel"
+]
+
+[[tiers]]
+name = "Growth"
+price = "$500/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "100,000 pages included"
+currency = "USD"
+cost_per_unit = "$0.005 / page"
+features = [
+    "Dedicated founder support"
+]

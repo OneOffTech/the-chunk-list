@@ -1,0 +1,124 @@
+name = "Reducto"
+description = "Turn documents into data. Build without constraints. Reducto combines the best of computer vision and new vision-language models to produce the most accurate, LLM-ready results."
+currency = "USD"
+url = "https://reducto.ai/"
+github = ""
+docs = "https://docs.reducto.ai/overview"
+type = "Cloud"
+last_updated = "2025-09-16"
+
+[metadata]
+default_billing_frequency = "Monthly"
+default_currency = "USD"
+has_usage_based_billing = true
+has_enterprise_option = true
+has_free_tier = false
+credit = "By default we treat each page in a document and every 5000 cells in a spreadsheet as 1 credit for billing. Reducto intelligently classifies page complexity, and will automatically discount simpler pages without table and figure summaries as 0.5x credits. Advanced features like agentic OCR and VLM enrichment are billed at 2x credits."
+
+
+[compliance]
+gdpr = ""
+soc_two = true
+iso = ""
+hipaa = true
+
+[processing]
+tables = true
+forms = true
+images = true
+graphs = true
+equation = true
+ocr = true
+
+[input_formats]
+pdf = true
+spreadsheet = true
+word = true
+powerpoint = true
+html = true
+epub = false
+images = true
+
+[output_formats]
+json = true
+markdown = true
+html = false
+plain = false
+structuredData = false
+
+
+[[tiers]]
+name = "Standard"
+billing_type = "Usage"
+price = "$350/month"
+included_quota = "15000 credits"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = "$0.020/credit"
+features = [
+    "Intelligent Chunking",
+    "No page limits"
+]
+
+[[tiers]]
+name = "Growth - 50k"
+price = "$840/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "50,000 pages included"
+currency = "USD"
+cost_per_unit = "$0.015 / credit"
+features = [
+    "Studio Access",
+    "Priority support in Slack",
+    "Business Associate Agreement",
+    "Zero Data Retention"
+]
+
+[[tiers]]
+name = "Growth - 150k"
+price = "$1950/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "150,000 pages included"
+currency = "USD"
+cost_per_unit = "$0.010 / credit"
+features = [
+    "Studio Access",
+    "Priority support in Slack",
+    "Business Associate Agreement",
+    "Zero Data Retention"
+]
+
+[[tiers]]
+name = "Growth - 300k"
+price = "$2825/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "300,000 pages included"
+currency = "USD"
+cost_per_unit = "$0.008 / credit"
+features = [
+    "Studio Access",
+    "Priority support in Slack",
+    "Business Associate Agreement",
+    "Zero Data Retention"
+]
+
+[[tiers]]
+name = "Enterprise"
+price = "custom"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = ""
+currency = "USD"
+cost_per_unit = ""
+features = [
+    "Custom SLAs",
+    "SSO and SAML Authentication",
+    "Data Processing Agreement",
+    "Priority Rate Limits",
+    "VPC and On Prem Deployments",
+    "Custom Processing Pipelines",
+    "EU/AU endpoints"
+]

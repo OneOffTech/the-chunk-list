@@ -1,0 +1,130 @@
+name = "Cardinal"
+description = "State of the Art Document Intelligence. Extract text, tables, and structure from any document with our powerful OCR technology. Choose from three specialized models to match your exact needs."
+currency = "USD"
+url = "https://trycardinal.ai/"
+github = ""
+docs = "https://docs.trycardinal.ai/"
+type = ["Cloud", "Self-hosted"]
+last_updated = "2025-09-16"
+
+[metadata]
+default_billing_frequency = "Monthly"
+default_currency = "USD"
+has_usage_based_billing = true
+has_enterprise_option = true
+has_free_tier = false
+
+
+[compliance]
+gdpr = ""
+soc_two = ""
+iso = ""
+
+
+[input_formats]
+pdf = false
+spreadsheet = false
+word = false
+powerpoint = false
+html = false
+epub = false
+images = false
+
+[output_formats]
+json = false
+markdown = false
+html = false
+plain = false
+structuredData = false
+
+
+[[tiers]]
+name = "Pay as you go"
+billing_type = "Usage"
+price = "$0.03/page"
+included_quota = ""
+billing_frequency = "Pay as you go"
+currency = "USD"
+cost_per_unit = "$0.03/page"
+features = [
+    "Our flagship model included",
+    "Bounding box detection",
+    "Signatures recognition",
+    "Redlines extraction",
+    "Image metadata extraction",
+    "Barcode scanning",
+    "Handwriting recognition"
+]
+
+
+[[tiers]]
+name = "Growth"
+billing_type = "Subscription"
+price = "$1095/month"
+included_quota = "60000 pages"
+pricing_type = "Subscription"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = "$0.016/page"
+support_level = "Priority"
+features = [
+    "Our flagship model included",
+    "Bounding box detection",
+    "Signatures recognition",
+    "Redlines extraction",
+    "Image metadata extraction",
+    "Barcode scanning",
+    "Handwriting recognition",
+    "Priority support via email and chat",
+    "HIPAA BAA available",
+    "Enhanced throughput with higher rate limits",
+    "US/EU regional data residency options"
+]
+
+[[tiers]]
+name = "Growth"
+billing_type = "Subscription"
+price = "$1795/month"
+included_quota = "125000 pages"
+pricing_type = "Subscription"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = "$0.014/page"
+support_level = "Priority"
+features = [
+    "Our flagship model included",
+    "Bounding box detection",
+    "Signatures recognition",
+    "Redlines extraction",
+    "Image metadata extraction",
+    "Barcode scanning",
+    "Handwriting recognition",
+    "Priority support via email and chat",
+    "HIPAA BAA available",
+    "Enhanced throughput with higher rate limits",
+    "US/EU regional data residency options"
+]
+
+[[tiers]]
+name = "Growth"
+billing_type = "Subscription"
+price = "$4195/month"
+included_quota = "350000 pages"
+pricing_type = "Subscription"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = "$0.010/page"
+support_level = "Priority"
+features = [
+    "Our flagship model included",
+    "Bounding box detection",
+    "Signatures recognition",
+    "Redlines extraction",
+    "Image metadata extraction",
+    "Barcode scanning",
+    "Handwriting recognition",
+    "Priority support via email and chat",
+    "HIPAA BAA available",
+    "Enhanced throughput with higher rate limits",
+    "US/EU regional data residency options"
+]

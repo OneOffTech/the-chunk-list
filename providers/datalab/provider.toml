@@ -1,0 +1,87 @@
+name = "Datalab"
+description = "Datalab builds state-of-the-art document intelligence models to convert complex PDFs and other unstructured formats into structured, machine-readable outputs — fast, accurately, and at scale."
+currency = "USD"
+url = "https://www.datalab.to/"
+github = "https://github.com/datalab-to/marker"
+docs = "https://documentation.datalab.to/"
+type = ["Cloud", "Self-hosted"]
+last_updated = "2025-09-16"
+
+[metadata]
+default_billing_frequency = "Monthly"
+default_currency = "USD"
+has_usage_based_billing = true
+has_enterprise_option = true
+has_free_tier = false
+
+[compliance]
+gdpr = ""
+soc_two = ""
+iso = ""
+hipaa = ""
+
+
+[input_formats]
+pdf = true
+spreadsheet = true
+word = true
+powerpoint = true
+html = true
+epub = true
+images = true
+
+[output_formats]
+json = true
+markdown = true
+html = true
+plain = false
+structuredData = true
+
+[[tiers]]
+name = "Managed"
+billing_type = "Usage"
+price = "$25 / month"
+included_quota = "15000 credits"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = "$2 per 1000 OCR pages, $4 per 1000 markdown, layout, table recognition pages"
+features = [
+    "Table detection",
+    "Markdown conversion",
+    "Reading order",
+    "OCR",
+    "Bounding box detection",
+    "Layout analysis",
+    "Standard email support"
+]
+
+[[tiers]]
+name = "Self-hosted"
+billing_type = "Subscription"
+price = "$5K/year"
+included_quota = "50,000 pages per month"
+billing_frequency = "Annual"
+currency = "USD"
+cost_per_unit = ""
+features = [
+    "Docker image for easy-to-run, single-GPU deployment",
+    "Self-serve checkout via Stripe",
+    "Priority email support"
+]
+
+[[tiers]]
+name = "Custom"
+billing_type = "Usage"
+price = ""
+included_quota = ""
+billing_frequency = ""
+currency = "USD"
+cost_per_unit = ""
+features = [
+    "Custom API or Self-Hosting needs",
+    "Throughput, latency, and accuracy tuning",
+    "Premium Support (Slack channel)",
+    "Custom rate limits",
+    "Training & Consulting",
+    "Custom Agreements (MSA, DPA, BAAs)"
+]

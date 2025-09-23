@@ -1,0 +1,100 @@
+name = "LlamaParse"
+description = "LlamaParse is a highly accurate parser for complex documents like financial reports, research papers, and scanned PDFs."
+currency = "USD"
+url = "https://llamaindex.ai/"
+github = ""
+docs = "https://docs.cloud.llamaindex.ai/llamaparse/overview"
+type = "Cloud"
+last_updated = "2025-09-16"
+
+[metadata]
+default_billing_frequency = "Monthly"
+default_currency = "USD"
+has_usage_based_billing = true
+has_enterprise_option = true
+has_free_tier = true
+
+has_trial = false
+
+eu_hosting = "Available"
+# can be hosted in EU datacenter
+
+credits = "All features are priced using credits, which are billed per page (or minute for audio). Credits vary by parsing mode, model, and whether files are cached."
+minimum_credits_per_page = 3
+
+[compliance]
+gdpr = true
+soc_two = true
+iso = true
+# ISO 27001
+hipaa = true
+
+[processing]
+tables = true
+forms = true
+images = true
+graphs = true
+equation = true
+ocr = true
+
+[input_formats]
+pdf = true
+spreadsheet = true
+word = true
+powerpoint = true
+html = true
+epub = false
+images = true
+
+[output_formats]
+json = true
+markdown = true
+html = false
+plain = false
+structuredData = false
+
+
+[[tiers]]
+name = "Free"
+billing_type = "Free"
+price = "0"
+included_quota = "10000 credits"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = ""
+features = [
+]
+
+[[tiers]]
+name = "Starter"
+billing_type = "Subscription, Usage"
+price = "$50 /month"
+included_quota = "50000 credits"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = "1.00 $/1000 credits US, 1.50 $/1000 credits EU"
+features = [
+]
+
+[[tiers]]
+name = "Pro"
+billing_type = "Subscription, Usage"
+price = "$500 /month"
+included_quota = "500000 credits"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = "1.00 $/1000 credits US, 1.50 $/1000 credits EU"
+features = [
+]
+
+[[tiers]]
+name = "Enterprise"
+price = "Custom"
+billing_type = "Subscription"
+billing_frequency = "Monthly"
+included_quota = ""
+currency = "USD"
+cost_per_unit = ""
+features = [
+    "Customer-hosted deployment"
+]
