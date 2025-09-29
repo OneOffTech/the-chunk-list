@@ -62,11 +62,9 @@ jobs:
           npm ci
       
       - name: Build static website
-        env:
-          ASSETS_URL: ${{ steps.pages.outputs.base_url }}
         run: |
           cd portal
-          npm run build
+          npm run build -- --base ${{ steps.pages.outputs.base_path }}
 
       
       - name: Upload artifact
