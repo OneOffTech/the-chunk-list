@@ -71,7 +71,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: portal/buid_production/
+          path: portal/build_production/
 
   # Deployment job
   deploy:
