@@ -7,8 +7,11 @@
         <meta name="description" content="{{ $page->description }}">
         <title>{{ $page->title }}</title>
         @viteRefresh()
+        @if ($page->production)
+        <link rel="stylesheet" href="{{ rtrim($page->baseUrl, '/') }}{{ vite('source/_assets/css/main.css') }}">
+        @else
         <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
-        <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
+        @endif
 
         <link rel="icon" type="image/svg+xml" href="{{ $page->absoluteUrl('/assets/favicon.svg') }}">
 
