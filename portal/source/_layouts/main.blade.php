@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
 
-        <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+        <link rel="icon" type="image/svg+xml" href="{{ $page->absoluteUrl('/assets/favicon.svg') }}">
 
         
         <meta property="og:title" content="{{ $page->title  }}">
@@ -20,10 +20,10 @@
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta property="og:url" content="{{ $page->getUrl() }}">
         <meta property="og:site_name" content="OneOffTech">
-        <meta property="og:image" content="/assets/images/og.jpg">
+        <meta property="og:image" content="{{ $page->absoluteUrl('/assets/images/og.jpg') }}">
         <meta property="og:type" content="website">
         <meta name="twitter:card" content="summary_large_image">
-        <meta property="twitter:image" content="/assets/images/og.jpg">
+        <meta property="twitter:image" content="{{ $page->absoluteUrl('/assets/images/og.jpg') }}">
         <meta property="twitter:title" content="{{ $page->title  }}">
  
         

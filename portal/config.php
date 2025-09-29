@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 return [
     'production' => false,
     'baseUrl' => 'http://localhost:8000/',
@@ -21,4 +23,12 @@ return [
             },
         ],
     ],
+
+    'absoluteUrl' => function ($page, $path) {
+        if(Str::startsWith($path, 'http')){
+            return $path;
+        }
+        
+        return  rtrim($page->baseUrl, '/') . '/' . trimPath($path);
+    },
 ];
