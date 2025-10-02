@@ -1,0 +1,194 @@
+name = "Landing AI Agentic Document Extraction"
+description = "Intelligent Document Understanding with Visual Context. Convert decades of archived documents into LLM-ready data in hours rather than weeks."
+currency = "USD"
+url = "https://landing.ai/agentic-document-extraction"
+github = ""
+docs = "https://docs.landing.ai/ade/ade-overview"
+type = "Cloud"
+last_updated = "2025-10-02"
+
+[metadata]
+default_billing_frequency = "Monthly"
+default_currency = "USD"
+has_usage_based_billing = true
+has_enterprise_option = true
+has_free_tier = false
+
+credit = "The number of credits used to process a document is based on the number of pages and the features used in parsing. 3 credits/page, 3 credits/page when extraction schema is provided, 1 credit/page for zero data retention."
+
+
+[compliance]
+# https://docs.landing.ai/ade/ade-eu
+gdpr = false
+soc_two = false
+iso = false
+hipaa = true
+
+[processing]
+tables = true
+forms = true
+images = true
+graphs = true
+equation = true
+ocr = true
+
+[input_formats]
+# https://docs.landing.ai/ade/ade-file-types
+pdf = true
+spreadsheet = false
+word = false
+powerpoint = false
+html = false
+epub = false
+images = true
+
+[output_formats]
+json = true
+markdown = true
+html = false
+plain = false
+structuredData = true
+
+
+# https://docs.landing.ai/ade/ade-pricing
+
+[[tiers]]
+name = "Explore"
+billing_type = "Usage"
+price = "pay as you go"
+included_quota = "1000 credits"
+billing_frequency = "Monthly"
+currency = "USD"
+cost_per_unit = "$1 buys 100 credits"
+features = [
+    "Parse",
+    "Field extraction",
+    "Visual grounding",
+    "Document splitting & classification",
+    "Multilingual documents",
+    "API & library access"
+]
+
+[[tiers]]
+name = "Team - 27.5k"
+price = "$250/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "27,500 credits"
+currency = "USD"
+cost_per_unit = "$1 buys 110 credits. Charged at $0.01 per credit"
+features = [
+    "Team management and shared usage",
+    "Unlimited API key creation with usage tracking",
+    "Email support",
+    "Zero data retention available",
+    "HIPAA-compliant processing with BAA agreement available"
+]
+
+[[tiers]]
+name = "Team - 55"
+price = "$500/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "55,000 credits"
+currency = "USD"
+cost_per_unit = "$1 buys 110 credits. Charged at $0.01 per credit"
+features = [
+    "Team management and shared usage",
+    "Unlimited API key creation with usage tracking",
+    "Email support",
+    "Zero data retention available",
+    "HIPAA-compliant processing with BAA agreement available"
+]
+
+[[tiers]]
+name = "Team - 110"
+price = "$1000/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "110,000 credits"
+currency = "USD"
+cost_per_unit = "$1 buys 110 credits. Charged at $0.01 per credit"
+features = [
+    "Team management and shared usage",
+    "Unlimited API key creation with usage tracking",
+    "Email support",
+    "Zero data retention available",
+    "HIPAA-compliant processing with BAA agreement available"
+]
+
+[[tiers]]
+name = "Team - 165"
+price = "$1500/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "165,000 credits"
+currency = "USD"
+cost_per_unit = "$1 buys 110 credits. Charged at $0.01 per credit"
+features = [
+    "Team management and shared usage",
+    "Unlimited API key creation with usage tracking",
+    "Email support",
+    "Zero data retention available",
+    "HIPAA-compliant processing with BAA agreement available"
+]
+
+
+[[tiers]]
+name = "Visionary - 260k"
+price = "$2000/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "260,000 pages included"
+currency = "USD"
+cost_per_unit = "$1 buys 130 credits. Charged at $0.01 per credit"
+features = [
+    "Team management and shared usage",
+    "Confidence scoring",
+    "Slack support"
+]
+
+
+[[tiers]]
+name = "Visionary - 455k"
+price = "$3500/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "455,000 pages included"
+currency = "USD"
+cost_per_unit = "$1 buys 130 credits. Charged at $0.01 per credit"
+features = [
+    "Team management and shared usage",
+    "Confidence scoring",
+    "Slack support"
+]
+
+[[tiers]]
+name = "Visionary - 650k"
+price = "$5000/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "650,000 pages included"
+currency = "USD"
+cost_per_unit = "$1 buys 130 credits. Charged at $0.01 per credit"
+features = [
+    "Team management and shared usage",
+    "Confidence scoring",
+    "Slack support"
+]
+
+[[tiers]]
+name = "Enterprise"
+price = "custom"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = ""
+currency = "USD"
+cost_per_unit = ""
+features = [
+    "SaaS, VPL (Virtual Private LandingAI), VPC, and on-prem deployments",
+    "Custom processing pipeline",
+    "SLAs and uptime guarantees",
+    "Priority rate limits",
+    "Snowflake integration support"
+]
