@@ -5,7 +5,7 @@ url = "https://www.chunkr.ai/"
 github = "https://github.com/lumina-ai-inc/chunkr"
 docs = "https://docs.chunkr.ai/docs/get-started/overview"
 type = ["Cloud", "Self-hosted"]
-last_updated = "2025-09-16"
+last_updated = "2025-10-02"
 
 [metadata]
 default_billing_frequency = "Monthly"
@@ -13,6 +13,9 @@ default_currency = "USD"
 has_usage_based_billing = true
 has_enterprise_option = true
 has_free_tier = true
+
+credits = "1 PDF page = 1 credit. Pages with VLM processing are billed at 2 credits per page. 5,000 spreadsheet cells = 1 credit (rounded up)."
+
 
 
 [compliance]
@@ -22,20 +25,20 @@ iso = ""
 
 
 [input_formats]
-pdf = false
-spreadsheet = false
-word = false
-powerpoint = false
+pdf = true
+spreadsheet = true
+word = true
+powerpoint = true
 html = false
 epub = false
 images = false
 
 [output_formats]
-json = false
-markdown = false
-html = false
+json = true
+markdown = true
+html = true
 plain = false
-structuredData = false
+structuredData = true
 
 
 [[tiers]]
@@ -51,39 +54,38 @@ features = [
     "Discord community support"
 ]
 
-
-[[tiers]]
-name = "Starter"
-price = "$50/month"
-billing_type = "Subscription, Usage"
-billing_frequency = "Monthly"
-included_quota = "5,000 pages included"
-currency = "USD"
-cost_per_unit = "$0.01 / page"
-features = [
-    "Community + Email support"
-]
-
 [[tiers]]
 name = "Dev"
-price = "$200/month"
+price = "$375/month"
 billing_type = "Subscription, Usage"
 billing_frequency = "Monthly"
-included_quota = "25,000 pages included"
+included_quota = "25,000 credits"
 currency = "USD"
-cost_per_unit = "$0.008 / page"
+cost_per_unit = "$0.015 / credit (page)"
 features = [
     "Priority support channel"
 ]
 
 [[tiers]]
 name = "Growth"
-price = "$500/month"
+price = "$750/month"
 billing_type = "Subscription, Usage"
 billing_frequency = "Monthly"
-included_quota = "100,000 pages included"
+included_quota = "75,000 credits"
 currency = "USD"
-cost_per_unit = "$0.005 / page"
+cost_per_unit = "$0.010 / credit (page)"
+features = [
+    "Dedicated founder support"
+]
+
+[[tiers]]
+name = "Scale"
+price = "$2000/month"
+billing_type = "Subscription, Usage"
+billing_frequency = "Monthly"
+included_quota = "250,000 credits"
+currency = "USD"
+cost_per_unit = "$0.008 / credit (page)"
 features = [
     "Dedicated founder support"
 ]
